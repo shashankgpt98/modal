@@ -1,0 +1,114 @@
+.container {
+  background-color: cadetblue;
+  height: 100vh;
+  width: 100vw;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body {
+  background-color: cadetblue;
+}
+.modal-wrapper {
+  /* position: relative; */
+  bottom: 50%;
+  left: 50%;
+  border: 3px solid rgb(39, 31, 19);
+  height: 220px;
+  width: 400px;
+  background-color: rgb(180, 180, 219);
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border-radius: 7px;
+}
+.start-bottom {
+  animation: slide-up 1s ease-in-out both;
+}
+@keyframes slide-up {
+  0% {
+    /* -webkit-transform: translateY(100px); */
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    /* -webkit-transform: translateY(0); */
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.start-top {
+  animation: slide-down 1s ease-in-out both;
+}
+@keyframes slide-down {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.start-left{
+    animation: slide-right 1s ease-in-out both;
+}
+@keyframes slide-right{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    1000%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.start-right{
+    animation: slide-left 1s ease-in-out both;
+}
+@keyframes slide-left{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    1000%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.btn {
+    border-radius: 5px;
+    height: 30px;
+    width: 180px;
+    margin: 10px 10px;
+    background-color: rgb(216, 134, 76);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn:hover{
+    background-color: chocolate;
+}
+.a {
+  overflow-y: auto;
+  height: 200px;
+  width: 400px;
+}
+.modal_btn {
+  margin-bottom: 2px;
+  background-color: rgb(216, 134, 76);
+}
+
+.header {
+  margin-left: 90px;
+  font-weight: bold;
+  font-size: large;
+}
+.border {
+  border-bottom: 2px solid rgb(4, 53, 68);
+  align-items: center;
+  display: flex;
+}
