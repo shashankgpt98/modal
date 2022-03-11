@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import BottomSlider from "./BottomSlider/BottomSlider"
+import BottomSlider from "./Modal/Modal"
 ReactDOM.render(
   <React.StrictMode>
     <BottomSlider />
